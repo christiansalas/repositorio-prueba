@@ -65,12 +65,12 @@
 
 1542911452 c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\linkedlist.h
 
-1542912097 c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\compra.h
+1542912996 c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\compra.h
 
-1542821671 c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\parser.h
+1542912810 c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\parser.h
 	"LinkedList.h"
 
-1542912199 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\main.c
+1542912581 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\main.c
 	"LinkedList.h"
 	<stdio.h>
 	<stdlib.h>
@@ -80,7 +80,7 @@
 	"string.h"
 	"Compra.h"
 
-1542911833 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\parser.c
+1542912810 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\parser.c
 	"LinkedList.h"
 	<stdio.h>
 	<stdlib.h>
@@ -98,7 +98,7 @@
 	"Parser.h"
 	"string.h"
 
-1542912097 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\compra.c
+1542912967 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\ejerciciopre2doparcialv3\compra.c
 	"LinkedList.h"
 	<stdio.h>
 	<stdlib.h>

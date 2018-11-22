@@ -3,6 +3,7 @@
 
 #include "LinkedList.h"
 
+//int parser_parseCompras(char* fileName, LinkedList* lista);
 int parser_parseCompras(char* fileName, LinkedList* lista);
 
 

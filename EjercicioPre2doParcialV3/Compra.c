@@ -17,7 +17,7 @@ void Compra_delete(Compra* this)
 {
     free(this);
 }
-Compra* Compra_newConParametros(char* nombreCliente,float precioUnitario,float iva,float montoTotal,int idProducto,int unidades)
+/*Compra* Compra_newConParametros(char* nombreCliente,float precioUnitario,float iva,float montoTotal,int idProducto,int unidades)
 {
     Compra* this;
     this=Compra_new();
@@ -29,6 +29,23 @@ Compra* Compra_newConParametros(char* nombreCliente,float precioUnitario,float i
     !Compra_setMontoTotal(this,montoTotal)&&
     !Compra_setIdProducto(this,idProducto)&&
     !Compra_setUnidades(this,unidades))
+    return this;
+
+    Compra_delete(this);
+    return NULL;
+}*/
+Compra* Compra_newConParametros(char* nombreCliente,char* precioUnitario,char* iva,char* montoTotal,char* idProducto,char* unidades)
+{
+    Compra* this;
+    this=Compra_new();
+
+    if(
+    !Compra_setNombreCliente(this,nombreCliente)&&
+    !Compra_setPrecioUnitario(this, atof(precioUnitario))&&
+    !Compra_setIva(this,atof(iva))&&
+    !Compra_setMontoTotal(this,atof(montoTotal))&&
+    !Compra_setIdProducto(this,atoi(idProducto))&&
+    !Compra_setUnidades(this,atoi(unidades)))
     return this;
 
     Compra_delete(this);
@@ -181,16 +198,19 @@ float bufferPrecioUnitario;
 
 int Compra_PorId(void * pElement, int idProducto)
 {
-    int retorno= -1;
-    Compra*pCompra=pElement;
-     if(pElement!=NULL && idProducto>=0 )
-     {
-         if(pCompra->idProducto== idProducto)
-         {
-            retorno = 1;
-         }
-     }
+     int retorno = -1;
+    Compra* pCompra = pElement;
+    if (pElement != NULL && idProducto >= 0)
+    {
 
+        if(pCompra->idProducto == idProducto)
+        {
+            retorno = 1;
+        }else
+        {
+            retorno = 0;
+        }
+    }
     return retorno;
 }
 

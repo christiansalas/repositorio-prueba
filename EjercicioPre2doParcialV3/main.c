@@ -36,7 +36,11 @@ int main()
     if(parser_parseCompras("data.csv",listaCompras)==1)
     {
         // Filtrar
-        listaFiltrada = ll_filterConDosPrametro(listaCompras, Compra_PorId);
+        listaFiltrada = ll_filterConDosPrametro(listaCompras,Compra_PorId);
+        if(listaFiltrada!=NULL)
+        {
+            printf("Lista Filtrada");
+        }
 
          emp_print(listaFiltrada);
 

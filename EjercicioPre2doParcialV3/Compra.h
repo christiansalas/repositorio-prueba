@@ -12,7 +12,7 @@ typedef struct
 
 Compra* Compra_new();
 void Compra_delete();
-Compra* Compra_newConParametros(char* nombreCliente,float precioUnitario,float iva,float montoTotal,int idProducto,int unidades);
+//Compra* Compra_newConParametros(char* nombreCliente,float precioUnitario,float iva,float montoTotal,int idProducto,int unidades);
 
 int Compra_setNombreCliente(Compra* this,char* nombreCliente);
 int Compra_getNombreCliente(Compra* this,char* nombreCliente);
@@ -35,6 +35,8 @@ int Compra_PorId(void * pElement, int idProducto);
 int Compra_ImprimirEmpleado(LinkedList*this);
 int Compra_CalcularMontoTotal(void* pElement);
 int emp_print (LinkedList* this);
+Compra* Compra_newConParametros(char* nombreCliente,char* precioUnitario,char* iva,char* montoTotal,char* idProducto,char* unidades);
+
 
 
 #endif // COMPRA_H_INCLUDED
