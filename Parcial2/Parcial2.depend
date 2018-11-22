@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1542928338 source:c:\users\alumno\desktop\parcialdos\parcial2\main.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"Ventas.h"
+	"LinkedList.h"
+	"Parser.h"
+	"string.h"
+	"utn.h"
+
+1542926816 source:c:\users\alumno\desktop\parcialdos\parcial2\ventas.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"Ventas.h"
+	"LinkedList.h"
+	"Parser.h"
+	"string.h"
+	"utn.h"
+
+1542929242 source:c:\users\alumno\desktop\parcialdos\parcial2\linkedlist.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"Ventas.h"
+	"LinkedList.h"
+	"Parser.h"
+	"string.h"
+	"utn.h"
+
+1542923621 c:\users\alumno\desktop\parcialdos\parcial2\linkedlist.h
+
+1542928338 c:\users\alumno\desktop\parcialdos\parcial2\ventas.h
+
+1542923849 c:\users\alumno\desktop\parcialdos\parcial2\parser.h
+	"LinkedList.h"
+
+1542926271 c:\users\alumno\desktop\parcialdos\parcial2\utn.h
+
+1542926270 source:c:\users\alumno\desktop\parcialdos\parcial2\parser.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"Ventas.h"
+	"LinkedList.h"
+	"Parser.h"
+	"string.h"
+	"utn.h"
+
+1542926270 source:c:\users\alumno\desktop\parcialdos\parcial2\utn.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"Ventas.h"
+	"LinkedList.h"
+	"Parser.h"
+	"string.h"
+	"utn.h"
+
