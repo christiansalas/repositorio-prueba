@@ -58,3 +58,62 @@
 	"string.h"
 	"utn.h"
 
+1543325027 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\repositorio-prueba\parcial2\linkedlist.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"Ventas.h"
+	"LinkedList.h"
+	"Parser.h"
+	"string.h"
+	"utn.h"
+
+1543306196 c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\repositorio-prueba\parcial2\linkedlist.h
+
+1543323732 c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\repositorio-prueba\parcial2\ventas.h
+
+1543306898 c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\repositorio-prueba\parcial2\parser.h
+	"LinkedList.h"
+
+1543155730 c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\repositorio-prueba\parcial2\utn.h
+
+1543324658 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\repositorio-prueba\parcial2\main.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"Ventas.h"
+	"LinkedList.h"
+	"Parser.h"
+	"string.h"
+	"utn.h"
+
+1543326962 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\repositorio-prueba\parcial2\parser.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"Ventas.h"
+	"LinkedList.h"
+	"Parser.h"
+	"string.h"
+	"utn.h"
+
+1543155730 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\repositorio-prueba\parcial2\utn.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"Ventas.h"
+	"LinkedList.h"
+	"Parser.h"
+	"string.h"
+	"utn.h"
+
+1543326962 source:c:\users\cris_\onedrive\documentos\git hub\repositorio-prueba\repositorio-prueba\parcial2\ventas.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"Ventas.h"
+	"LinkedList.h"
+	"Parser.h"
+	"string.h"
+	"utn.h"
+

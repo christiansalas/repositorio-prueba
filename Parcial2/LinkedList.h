@@ -56,3 +56,5 @@ LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void* pElement));
 LinkedList* ll_filterConDosPrametro(LinkedList* this, int (*pFunc)(void* pElement, int pElement2));
 
 int ll_map(LinkedList * this,  int (*pFunc)(void*));
+int ll_count(LinkedList*this,int(*fn)(void*element));
+

@@ -624,26 +624,25 @@ LinkedList* ll_filterConDosPrametro(LinkedList* this, int (*pFunc)(void* pElemen
     return returnAux;
 }
 
-ll_count(LinkedList*this,int(*fn)(void*element))
+int ll_count(LinkedList* this, int (*pFunc)(void*))
 {
-
-
-     int returnAux = -1;
+    int retorno = 0;
     int i;
-    void * element1;
-    if(this != NULL && fn != NULL)
+    void * pElement = NULL;
+    int iterador;
+    if (this != NULL && pFunc != NULL)
     {
-        for ( i= 0; i < ll_len(this); i++)
+        for( i=0; i < ll_len(this); i++)
         {
-            element1 = ll_get(this,i);
-            if(fn(element1)== 0)
+            pElement = ll_get(this, i);
+            iterador = pFunc(pElement);
+            if(iterador >= 0)
             {
-                returnAux = 0;
+                retorno = retorno + iterador;
             }
         }
+
     }
-    return returnAux;
-
-
+    return retorno;
 
 }

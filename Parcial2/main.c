@@ -11,14 +11,23 @@
 
 int main()
 {
-  LinkedList* listaVentas = ll_newLinkedList();
-LinkedList* listaFiltrada = ll_newLinkedList();
+LinkedList* listaVentas = ll_newLinkedList();
+//LinkedList* listaFiltrada = ll_newLinkedList();
 
-if(parser_parseVentas("data.csv",listaVentas)==1)
+if(parser_parseVentas("data.csv",listaVentas)==0)
 {
-    printf ("Entro\n");
-    em_calcularVentas(listaFiltrada);
+    ventas_print(listaVentas);
+    printf ("Archivo Creado con exito!!\n");
 }
+
+
+
+
+if( generarArchivoSueldos("informes.csv",listaVentas)==0)
+{
+    printf("creo el archivo\n");
+}
+
 
 
     return 0;
