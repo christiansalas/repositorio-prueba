@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1544720778 source:c:\users\cris_\onedrive\desktop\finallaboratorio\linkedlist.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"temas.h"
+	"LinkedList.h"
+	"usuarios.h"
+	"string.h"
+	"utn.h"
+	"parser.h"
+
+1544717920 c:\users\cris_\onedrive\desktop\finallaboratorio\linkedlist.h
+
+1544717926 c:\users\cris_\onedrive\desktop\finallaboratorio\temas.h
+
+1544719311 c:\users\cris_\onedrive\desktop\finallaboratorio\usuarios.h
+
+1544718002 c:\users\cris_\onedrive\desktop\finallaboratorio\utn.h
+
+1544721690 source:c:\users\cris_\onedrive\desktop\finallaboratorio\main.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"temas.h"
+	"LinkedList.h"
+	"usuarios.h"
+	"string.h"
+	"utn.h"
+	"parser.h"
+
+1544721539 source:c:\users\cris_\onedrive\desktop\finallaboratorio\parser.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"temas.h"
+	"LinkedList.h"
+	"usuarios.h"
+	"string.h"
+	"utn.h"
+	"parser.h"
+
+1544720778 source:c:\users\cris_\onedrive\desktop\finallaboratorio\temas.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"temas.h"
+	"LinkedList.h"
+	"usuarios.h"
+	"string.h"
+	"utn.h"
+	"parser.h"
+
+1544720778 source:c:\users\cris_\onedrive\desktop\finallaboratorio\usuarios.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"temas.h"
+	"LinkedList.h"
+	"usuarios.h"
+	"string.h"
+	"utn.h"
+	"parser.h"
+
+1544720778 source:c:\users\cris_\onedrive\desktop\finallaboratorio\utn.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	"temas.h"
+	"LinkedList.h"
+	"usuarios.h"
+	"string.h"
+	"utn.h"
+	"parser.h"
+
+1544720793 c:\users\cris_\onedrive\desktop\finallaboratorio\parser.h
+
