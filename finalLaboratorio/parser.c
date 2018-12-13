@@ -21,7 +21,9 @@
 int parser_parseUsuarios(char* fileName, LinkedList* listaUsuarios)
 {
 
-
+    char bufferLine[1024];
+    char* delimitador = ",";
+    char* token;
     int retorno = -1;
     char bufferId[1024];
     char bufferNombre[1024];
@@ -35,56 +37,53 @@ int parser_parseUsuarios(char* fileName, LinkedList* listaUsuarios)
     FILE* pFile;
     pFile = fopen(fileName,"r");
 
-    if(pFile!=NULL)
+     if(pFile!=NULL)
     {
         while(!feof(pFile))
         {
-            //printf("Entro al while \n");
-
-            if(flagOnce==1)
+            if(flagOnce && fscanf(pFile,"%[^\n]\n",bufferLine))
             {
-                printf("entro al flag \n");
-                fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]\n",
-                        bufferId,
-                        bufferNombre,
-                        bufferEmail,
-                        bufferSexo,
-                        bufferPais,
-                        BufferPassword,
-                        bufferIpAdress
-                        );
                 flagOnce = 0;
-                printf("Entro al Once \n");
             }
-             fscanf(pFile, "%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]\n",
-                        bufferId,
-                        bufferNombre,
-                        bufferEmail,
-                        bufferSexo,
-                        bufferPais,
-                        BufferPassword,
-                        bufferIpAdress
-                        );
+            if(fscanf(pFile,"%[^\n]\n",bufferLine))
+            {
+                token = strtok(bufferLine, delimitador);
 
-                        fprintf(pUsuario,bufferId,
-                        bufferNombre,
-                        bufferEmail,
-                        bufferSexo,
-                        bufferPais,
-                        BufferPassword,
-                        bufferIpAdress);
+                strncpy(bufferId, token, 1024);
+                token = strtok(NULL, delimitador);
 
-            pUsuario = usuarios_newConParametros( bufferId, bufferNombre, bufferEmail, bufferSexo, bufferPais, BufferPassword,bufferIpAdress);
+                strncpy(bufferNombre, token, 1024);
+                token = strtok(NULL, delimitador);
+
+                strncpy(bufferEmail, token, 1024);
+                token = strtok(NULL, delimitador);
+
+                strncpy(bufferSexo, token, 1024);
+                token = strtok(NULL, delimitador);
+
+                strncpy(bufferPais, token, 1024);
+                token = strtok(NULL, delimitador);
+
+                strncpy(BufferPassword, token, 1024);
+                token = strtok(NULL, delimitador);
+
+                strncpy(bufferIpAdress, token, 1024);
+
+// printf("\nId %s - nombre: %s -email: %s - sexo: %s - pais: %s - passwd: %s- ip : %s  \n"
+//             ,bufferId, bufferNombre, bufferEmail, bufferSexo, bufferPais, BufferPassword,bufferIpAdress );
+
+                pUsuario = usuarios_newConParametros(bufferId,bufferNombre,bufferEmail,bufferSexo,bufferPais,BufferPassword,bufferIpAdress);
+            }
             if(pUsuario != NULL)
             {
                 retorno = 0;
                 ll_add(listaUsuarios, pUsuario);
-
             }
         }
     }
     return retorno;
 }
+
 
 
 
@@ -99,16 +98,15 @@ int parser_parseUsuarios(char* fileName, LinkedList* listaUsuarios)
 int parser_parseTemas(char* fileName, LinkedList* listaTemas)
 {
 
- /* int id;
-    char nombre_Tema[1024];
-    char artista[1024];
-    int idUsuario;*/
 
+char bufferLine[1024];
+char* delimitador = ",";
+char* token;
 
-    int retorno = -1;
-    char bufferId[1024];
-    char bufferNombre_Tema[1024];
-    char bufferArtista[1024];
+int retorno = -1;
+char bufferId[1024];
+char bufferNombre_Tema[1024];
+char bufferArtista[1024];
 
     int flagOnce = 1;
     Temas* pTemas;
@@ -118,32 +116,35 @@ int parser_parseTemas(char* fileName, LinkedList* listaTemas)
     {
         while(!feof(pFile))
         {
-            if(flagOnce)
+            if(flagOnce && fscanf(pFile,"%[^\n]\n",bufferLine))
             {
-                fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n",
-                        bufferId,
-                        bufferNombre_Tema,
-                        bufferArtista
-                        );
                 flagOnce = 0;
             }
-            fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n",
-                        bufferId,
-                        bufferNombre_Tema,
-                        bufferArtista
-                        );
+            if(fscanf(pFile,"%[^\n]\n",bufferLine))
+            {
+                token = strtok(bufferLine, delimitador);
 
+                strncpy(bufferId, token, 1024);
+                token = strtok(NULL, delimitador);
 
-            pTemas = temas_newConParametros(bufferId,bufferNombre_Tema,bufferArtista,NULL);
+                strncpy(bufferNombre_Tema, token, 1024);
+                token = strtok(NULL, delimitador);
+
+                strncpy(bufferArtista, token, 1024);
+
+// printf("\nId %s - nombre del tema: %s -Artista: %s \n"
+            // ,bufferId, bufferNombre_Tema, bufferArtista );
+
+                pTemas = temas_newConParametros(bufferId,bufferNombre_Tema,bufferArtista,NULL);
+            }
             if(pTemas != NULL)
             {
                 retorno = 0;
-                ll_add(listaTemas,pTemas);
-
+                ll_add(listaTemas, pTemas);
             }
         }
     }
     return retorno;
-}
+    }
 
 

@@ -28,7 +28,7 @@ Temas* temas_newConParametros(int id,char* nombre_Tema,char* artista,int idUsuar
     this=temas_new();
 
     if(
-    !temas_setId(this,id)&&
+    !temas_setId(this,atoi(id))&&
     !temas_setNombre_Tema(this,nombre_Tema)&&
     !temas_setArtista(this,artista)&&
     !temas_setIdUsuario(this,idUsuario))
@@ -134,4 +134,69 @@ int temas_getIdUsuario(Temas* this,int* idUsuario)
     }
     return retorno;
 }
+
+int temas_print(LinkedList* this)
+ {
+
+   int retorno = -1;
+   Temas * ptemas = NULL;
+   int bufferId;
+   char bufferNombreTema[1024];
+   char bufferArtista[1024];
+   int i;
+    if(this != NULL)
+    {
+        for (i = 0; i< ll_len(this); i++)
+        {
+                ptemas= ll_get(this,i);
+                temas_getId(ptemas, &bufferId);
+                temas_getNombre_Tema(ptemas,bufferNombreTema);
+                temas_getArtista(ptemas,bufferArtista);
+
+             printf("\nId %d - NombreTema: %s -Artista: %s \n"
+             ,bufferId,bufferNombreTema, bufferArtista);
+             retorno = 0;
+        }
+    }
+
+    return retorno;
+ }
+
+
+ int temas_verificarTemas(LinkedList* this)
+ {
+     int retorno =-1;
+     int i;
+     Temas *pTemas;
+
+    int bufferIdTema;
+    int bufferiDAuxiliar;
+
+
+     if(this != NULL)
+     {
+       if( utn_getEntero(&bufferIdTema,1024,"Ingrese Id del Tema \n","Error",2)==0)
+       {
+
+           for (i=0;i<ll_len(this);i++)
+           {
+            pTemas=ll_get(this,i);
+            temas_getId(pTemas,bufferiDAuxiliar);
+            if(bufferiDAuxiliar==bufferIdTema)
+            {
+                retorno = 0;
+            }
+
+           }
+       }
+
+
+
+     }
+
+
+
+
+
+ }
 

@@ -23,4 +23,6 @@ int temas_getArtista(Temas* this,char* artista);
 
 int temas_setIdUsuario(Temas* this,int idUsuario);
 int temas_getIdUsuario(Temas* this,int* idUsuario);
+int temas_print(LinkedList* this);
+
 

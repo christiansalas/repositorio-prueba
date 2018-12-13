@@ -17,19 +17,44 @@ int main()
 
     int resp=1;
 
+        if(parser_parseUsuarios("usuarios.dat",listaUsuarios)== 0)
+        {
+        printf("Datos Ingresados \n");
+        }
 
-//do
-   // {
-       // scanf("%d",&resp);
-               //printf("Ordenar por NOmbre \n");
-               // switch(resp)
-              //  {
-               // case 1 :
-                 if(   parser_parseUsuarios("usuarios.dat",listaUsuarios)== 0)
-                    {
-                     printf("Datos Ingresados \n");
-                    }
-           // resp= 5;
+        if(parser_parseTemas("temas.dat",listaTemas)== 0)
+
+        {
+        printf("Datos Ingresados \n");
+        }
+/*
+    if(  ll_sort(listaUsuarios,usuarios_criterioSortNombre,1)==0)
+     {
+
+          usuarios_print(listaUsuarios);
+      }
+
+   /*   if (ll_sort(listaUsuarios,usuarios_criterioSortPaisYNombre,1)== 0)
+      {
+          usuarios_print(listaUsuarios);
+
+
+      }*/
+
+
+//
+   if(   usuarios_verificarDatos(listaUsuarios)==0)
+   {
+
+    temas_print(listaTemas);
+
+    }
+
+
+
+
+
+           // res
                  //   break;
                // }
     //    }while (resp !=5);

@@ -38,4 +38,13 @@ int usuarios_getPassdword(Usuarios* this,char* passdword);
 
 int usuarios_setIpAdress(Usuarios* this,char* ipAdress);
 int usuarios_getIpAdress(Usuarios* this,char* ipAdress);
+//int usuarios_sort(void* pElement, void* pElement2);
+int usuarios_print(LinkedList* this);
+ int usuarios_criterioSortNombre(void* thisA,void* thisB);
+ int usuarios_criterioSortPaisYNombre(void* thisA,void* thisB);
+ int usuarios_verificarDatos(LinkedList * this);
+
+
+
+
 
